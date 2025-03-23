@@ -2,6 +2,7 @@ package com.jetbrains.greeting
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -38,7 +39,8 @@ fun App() {
         val greeting = remember { Greeting().greet() }
 
         Column (
-            modifier = Modifier.padding(all = 20.dp)
+            modifier = Modifier.padding(all = 20.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
         ){
 
         }
