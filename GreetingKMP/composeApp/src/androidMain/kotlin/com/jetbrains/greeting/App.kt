@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Button
+import androidx.compose.material.Divider
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
@@ -42,7 +43,10 @@ fun App() {
             modifier = Modifier.padding(all = 20.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ){
-
+            greeting.forEach { greeting ->
+                Text(greeting)
+                Divider()
+            }
         }
     }
 }
