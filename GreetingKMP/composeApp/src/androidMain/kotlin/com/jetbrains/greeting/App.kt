@@ -18,10 +18,10 @@ fun App() {
     MaterialTheme {
         val greeting = remember { Greeting().greet() }
 
-        Column (
+        Column(
             modifier = Modifier.padding(all = 20.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp)
-        ){
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
             greeting.forEach { greeting ->
                 Text(greeting)
                 Divider()
