@@ -4,6 +4,7 @@ import kotlin.random.Random
 
 
 class Greeting {
+
      private val platform = getPlatform()
 
     fun greet(): List<String> = buildList {
