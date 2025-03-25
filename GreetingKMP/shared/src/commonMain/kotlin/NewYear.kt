@@ -7,7 +7,6 @@ import kotlinx.datetime.todayIn
 fun daysUntilNewYear():Int {
     val today = Clock.System.todayIn(TimeZone.currentSystemDefault())
     val closestNewYear = LocalDate(today.year + 1,1,1)
-    val daysOfLive = LocalDate(today.year - 22 , 1, 1)
     return today.daysUntil(closestNewYear)
 
 }
