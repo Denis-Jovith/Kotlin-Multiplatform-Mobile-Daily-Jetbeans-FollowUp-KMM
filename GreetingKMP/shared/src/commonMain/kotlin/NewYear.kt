@@ -9,3 +9,5 @@ fun daysUntilNewYear():Int {
     val closestNewYear = LocalDate(today.year + 1,1,1)
     return today.daysUntil(closestNewYear)
 }
+
+fun dayPhrase(): String = "There are only ${daysUntilNewYear()}"
